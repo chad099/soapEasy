@@ -28,7 +28,10 @@ class SoapEasyServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		 $this->app['soap'] = $this->app->share(function($app)
+        {
+            return new Soap;
+        });
 	}
 
 	/**
@@ -38,7 +41,7 @@ class SoapEasyServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return array('soap');
 	}
 
 }
