@@ -3,12 +3,12 @@ soapEasy
 This is helpfull for call soap cleint easily
 
 Requirements
-
+==============
 PHP >=5.3
 Installation
 
 Install using composer:
-
+=====================
 Add in composer.json
 
     {
@@ -16,8 +16,9 @@ Add in composer.json
              "shekhar/soap-easy": "dev-master"
         }
     }
+    
 Code Examples In Core PHP
-
+=========
 <?php
 
 //Call Autoload classes
@@ -27,8 +28,9 @@ use soapEasy\Soap;
 
 echo Soap::getfunction();
 ?>
-License
 
-Yephp is licensed under the MIT License.
+License
+===========
+SoapEasy is licensed under the MIT License.
 
 Copyright 2014 shekhar singh
