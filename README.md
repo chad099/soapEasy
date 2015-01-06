@@ -24,9 +24,9 @@ Code Examples In Core PHP
 //Call Autoload classes
 include('vendor/autoload.php');
 
-use soapEasy\Soap;
+use soapEasy\SoapEasy\SoapEasy;
 
-echo Soap::getfunction();
+echo SoapEasy::rand(6);
 ?>
 
 License
